@@ -355,7 +355,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(144, 3);
+            this.button1.Location = new System.Drawing.Point(192, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -379,9 +379,9 @@
             this.productoToolStripMenuItem,
             this.ventasToolStripMenuItem,
             this.listadoToolStripMenuItem});
+            this.menuToolStripMenuItem.Image = global::pryGerhauser_I.E.LP1.Properties.Resources.kisspng_menu_computer_icons_button_menu_designs_5b2fd502079f35_6844543215298613780313;
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
             // 
             // productoToolStripMenuItem
             // 
