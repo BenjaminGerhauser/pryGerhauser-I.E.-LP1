@@ -111,5 +111,29 @@ namespace pryGerhauser_I.E.LP1
                 btnMenu.Text = "   ";
             }
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsultaProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargaProducto CargarProducto = new frmCargaProducto();
+
+            this.Hide();
+
+            CargarProducto.ShowDialog();
+        }
+
+        private void menuToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -41,6 +41,11 @@ namespace pryGerhauser_I.E.LP1
             }
         }
 
+        private void frmCargaVentas_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         int varAux, varCantidadTotal;
         public frmCargaVentas()
         {
