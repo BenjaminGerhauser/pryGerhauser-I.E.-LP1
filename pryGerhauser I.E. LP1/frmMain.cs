@@ -12,10 +12,10 @@ namespace pryGerhauser_I.E.LP1
 {
     public partial class frmMain : Form
     {
-        public string[,] matrizProductos = new string[10, 4];
+        //public string[,] matrizProductos = new string[10, 4];
         //public string[,] matrizVentas = new string[10,4];
         //public string[,] matrizCantidadProducto = new string[10,2];
-
+        public frmListado Listado = new frmListado();
         int i;
 
 

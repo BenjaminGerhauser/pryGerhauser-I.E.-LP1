@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
-            this.dataGridViewVentas = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewVentas = new System.Windows.Forms.DataGridView();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,19 +58,6 @@
             this.dataGridViewProductos.Size = new System.Drawing.Size(300, 205);
             this.dataGridViewProductos.TabIndex = 0;
             // 
-            // dataGridViewVentas
-            // 
-            this.dataGridViewVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Producto,
-            this.IDConsulta,
-            this.Cantidad,
-            this.FechaConsulta});
-            this.dataGridViewVentas.Location = new System.Drawing.Point(348, 116);
-            this.dataGridViewVentas.Name = "dataGridViewVentas";
-            this.dataGridViewVentas.Size = new System.Drawing.Size(355, 205);
-            this.dataGridViewVentas.TabIndex = 1;
-            // 
             // Nombre
             // 
             this.Nombre.Frozen = true;
@@ -89,6 +76,19 @@
             this.Fecha.Frozen = true;
             this.Fecha.HeaderText = "Fecha";
             this.Fecha.Name = "Fecha";
+            // 
+            // dataGridViewVentas
+            // 
+            this.dataGridViewVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Producto,
+            this.IDConsulta,
+            this.Cantidad,
+            this.FechaConsulta});
+            this.dataGridViewVentas.Location = new System.Drawing.Point(364, 116);
+            this.dataGridViewVentas.Name = "dataGridViewVentas";
+            this.dataGridViewVentas.Size = new System.Drawing.Size(355, 205);
+            this.dataGridViewVentas.TabIndex = 1;
             // 
             // Producto
             // 

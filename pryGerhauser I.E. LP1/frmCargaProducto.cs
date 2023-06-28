@@ -14,6 +14,8 @@ namespace pryGerhauser_I.E.LP1
     {
         string varFecha, varNombre, varID, varCantidad;
         int IndiceFila, varAux;
+        string[,] matrizProductos = new string[10, 4];
+
 
         frmMain objetoMain = new frmMain();
         frmCargaVentas Ventas = new frmCargaVentas();
@@ -21,44 +23,43 @@ namespace pryGerhauser_I.E.LP1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < objetoMain.matrizProductos.GetLength(0); i++)
+            for (int i = 0; i < matrizProductos.GetLength(0); i++)
             {
-                if (Ventas.matrizProductos[i, 0] != null)
+                if (matrizProductos[i, 0] != null)
                 {
-                    if (Ventas.cmbProducto.Items.Contains(objetoMain.matrizProductos[i, 0]) == false)
+                    if (Ventas.cmbProducto.Items.Contains(matrizProductos[i, 0]) == false)
                     {
-                        Ventas.cmbProducto.Items.Add(objetoMain.matrizProductos[i, 0]);
+                        Ventas.cmbProducto.Items.Add(matrizProductos[i, 0]);
                     }
                 }
             }
-           
-            this.Hide();
-            Ventas.ShowDialog();
+            //this.Hide();
+            //Ventas.ShowDialog();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             dataGridViewConsultaProducto.Rows.Clear();
 
-            for (int f = 0; f < objetoMain.matrizProductos.GetLength(0); f++)
+            for (int f = 0; f < matrizProductos.GetLength(0); f++)
             {
-                if (objetoMain.matrizProductos[f, 0] != null)
-                {
-                    dataGridViewConsultaProducto.Rows.Add(objetoMain.matrizProductos[f, 0].ToUpper(), objetoMain.matrizProductos[f, 1],
-                        objetoMain.matrizProductos[f, 2], objetoMain.matrizProductos[f, 3]);
+                if (matrizProductos[f, 0] != null)
+                {   
+                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[f, 0].ToUpper(), matrizProductos[f, 1],
+                        matrizProductos[f, 2], matrizProductos[f, 3]);
                 }
             }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < objetoMain.matrizProductos.GetLength(0); i++)
+            for (int i = 0; i < matrizProductos.GetLength(0); i++)
             {
-                if (Ventas.matrizProductos[i, 0] != null)
+                if (matrizProductos[i, 0] != null)
                 {
-                    if (Ventas.cmbProducto.Items.Contains(objetoMain.matrizProductos[i, 0]) == false)
-                    {
-                        Ventas.cmbProducto.Items.Add(objetoMain.matrizProductos[i, 0]);
+                    if (Ventas.cmbProducto.Items.Contains(matrizProductos[i, 0]) == false)
+                    {   
+                        Ventas.cmbProducto.Items.Add(matrizProductos[i, 0]);
                     }
                 }
             }
@@ -73,6 +74,11 @@ namespace pryGerhauser_I.E.LP1
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            //lblErrorFecha.Visible  = false;
+            //lblErrorID.Visible = false; 
+            //lblErrorNombre.Visible = false; 
+
+
             if (dtpFecha.Value >= DateTime.Today) 
             {
                 varFecha = dtpFecha.Value.ToString();
@@ -99,11 +105,11 @@ namespace pryGerhauser_I.E.LP1
             {
                 lblErrorFecha.Visible = true;
             }
-            for (int f = 0; f < objetoMain.matrizProductos.GetLength(0); f++)
+            for (int f = 0; f < matrizProductos.GetLength(0); f++)
             {
-                if (varNombre == objetoMain.matrizProductos[f, 0])
+                if (varNombre == matrizProductos[f, 0])
                 {
-                    if(varID == objetoMain.matrizProductos[f, 1])
+                    if(varID == matrizProductos[f, 1])
                     {
 
                         //Ventas.matrizProductos[IndiceFila, 0] = varNombre;
@@ -111,10 +117,10 @@ namespace pryGerhauser_I.E.LP1
                         //Ventas.matrizProductos[IndiceFila, 2] = varFecha;
                         //Ventas.matrizProductos[IndiceFila, 3] = varCantidad;
 
-                        objetoMain.matrizProductos[IndiceFila, 0] = varNombre;
-                        objetoMain.matrizProductos[IndiceFila, 1] = varID;
-                        objetoMain.matrizProductos[IndiceFila, 2] = varFecha;
-                        objetoMain.matrizProductos[IndiceFila, 3] = varCantidad;
+                        matrizProductos[IndiceFila, 0] = varNombre;
+                        matrizProductos[IndiceFila, 1] = varID;
+                        matrizProductos[IndiceFila, 2] = varFecha;
+                        matrizProductos[IndiceFila, 3] = varCantidad;
                         break;
                     }
                     else
@@ -125,17 +131,17 @@ namespace pryGerhauser_I.E.LP1
                 }
                 else 
                 {
-                    if (varNombre != objetoMain.matrizProductos[f, 0] && varID != objetoMain.matrizProductos[f, 1])
+                    if (varNombre != matrizProductos[f, 0] && varID != matrizProductos[f, 1])
                     {
                         //Ventas.matrizProductos[IndiceFila, 0] = varNombre;
                         //Ventas.matrizProductos[IndiceFila, 1] = varID;
                         //Ventas.matrizProductos[IndiceFila, 2] = varFecha;
                         //Ventas.matrizProductos[IndiceFila, 3] = varCantidad;
 
-                        objetoMain.matrizProductos[IndiceFila, 0] = varNombre;
-                        objetoMain.matrizProductos[IndiceFila, 1] = varID;
-                        objetoMain.matrizProductos[IndiceFila, 2] = varFecha;
-                        objetoMain.matrizProductos[IndiceFila, 3] = varCantidad;
+                        matrizProductos[IndiceFila, 0] = varNombre;
+                        matrizProductos[IndiceFila, 1] = varID;
+                        matrizProductos[IndiceFila, 2] = varFecha;
+                        matrizProductos[IndiceFila, 3] = varCantidad;
                         break;
                     }
                     else
