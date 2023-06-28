@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.mrcMenu = new System.Windows.Forms.GroupBox();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.mrcMenuDesplegable = new System.Windows.Forms.GroupBox();
             this.btnProducto = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
@@ -43,36 +42,29 @@
             this.mrcListado = new System.Windows.Forms.GroupBox();
             this.btnListaProducto = new System.Windows.Forms.Button();
             this.btnListadoVentas = new System.Windows.Forms.Button();
-            this.mrcMenu.SuspendLayout();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mrcMenuDesplegable.SuspendLayout();
             this.mrcProductos.SuspendLayout();
             this.mrcVentas.SuspendLayout();
             this.mrcListado.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcMenu
             // 
             this.mrcMenu.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.mrcMenu.Controls.Add(this.btnMenu);
             this.mrcMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mrcMenu.Location = new System.Drawing.Point(-10, -13);
+            this.mrcMenu.Location = new System.Drawing.Point(143, 109);
             this.mrcMenu.Name = "mrcMenu";
             this.mrcMenu.Size = new System.Drawing.Size(284, 50);
             this.mrcMenu.TabIndex = 0;
             this.mrcMenu.TabStop = false;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackgroundImage = global::pryGerhauser_I.E.LP1.Properties.Resources.kisspng_menu_computer_icons_button_menu_designs_5b2fd502079f35_6844543215298613780313;
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMenu.Location = new System.Drawing.Point(22, 19);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(29, 23);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.Text = "   ";
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.mrcMenu.Visible = false;
             // 
             // mrcMenuDesplegable
             // 
@@ -160,6 +152,7 @@
             this.btnConsultaProducto.Text = "Consultar";
             this.btnConsultaProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultaProducto.UseVisualStyleBackColor = false;
+            this.btnConsultaProducto.Click += new System.EventHandler(this.btnConsultaProducto_Click);
             // 
             // mrcVentas
             // 
@@ -239,6 +232,60 @@
             this.btnListadoVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnListadoVentas.UseVisualStyleBackColor = false;
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackgroundImage = global::pryGerhauser_I.E.LP1.Properties.Resources.kisspng_menu_computer_icons_button_menu_designs_5b2fd502079f35_6844543215298613780313;
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMenu.Location = new System.Drawing.Point(173, 198);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(29, 23);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.Text = "   ";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Visible = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(274, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosToolStripMenuItem,
+            this.ventasToolStripMenuItem,
+            this.listadoToolStripMenuItem});
+            this.menuToolStripMenuItem.Image = global::pryGerhauser_I.E.LP1.Properties.Resources.kisspng_menu_computer_icons_button_menu_designs_5b2fd502079f35_6844543215298613780313;
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
+            this.menuToolStripMenuItem.MouseHover += new System.EventHandler(this.menuToolStripMenuItem_MouseHover);
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Text = "Productos";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // listadoToolStripMenuItem
+            // 
+            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem.Text = "Listado";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,19 +293,25 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(274, 335);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.mrcProductos);
             this.Controls.Add(this.mrcVentas);
             this.Controls.Add(this.mrcMenu);
             this.Controls.Add(this.mrcMenuDesplegable);
             this.Controls.Add(this.mrcListado);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "frmMain";
-            this.mrcMenu.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mrcMenuDesplegable.ResumeLayout(false);
             this.mrcProductos.ResumeLayout(false);
             this.mrcVentas.ResumeLayout(false);
             this.mrcListado.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -279,5 +332,10 @@
         private System.Windows.Forms.GroupBox mrcVentas;
         private System.Windows.Forms.Button btnRegistrarVenta;
         private System.Windows.Forms.Button btnConsultarVenta;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem;
     }
 }
