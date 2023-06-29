@@ -16,7 +16,7 @@ namespace pryGerhauser_I.E.LP1
         int IndiceFila, varAux;
 
         frmMain objetoMain = new frmMain();
-
+        frmCargaVentas Ventas = new frmCargaVentas();
         string[,] matrizProductos = new string[10, 4];
         
 
@@ -25,6 +25,11 @@ namespace pryGerhauser_I.E.LP1
         private void button1_Click(object sender, EventArgs e)
         {
             objetoMain.Listado.ShowDialog();
+        }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ventas.ShowDialog();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -80,11 +85,16 @@ namespace pryGerhauser_I.E.LP1
                                     matrizProductos[IndiceFila, 2] = varCantidad;
                                     matrizProductos[IndiceFila, 3] = varFecha;
 
+                                    Ventas.vectorProductos[IndiceFila] = varNombre;
+
                                     objetoMain.Listado.matrizProductos[IndiceFila, 0] = varNombre;
                                     objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
                                     objetoMain.Listado.matrizProductos[IndiceFila, 2] = varCantidad;
                                     objetoMain.Listado.matrizProductos[IndiceFila, 3] = varFecha;
-                                    
+
+                                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0].ToUpper(), matrizProductos[IndiceFila, 1],
+                                    matrizProductos[IndiceFila, 2], matrizProductos[IndiceFila, 3]);
+
                                     lblErrorID.Visible = false;
 
                                     IndiceFila++;
@@ -122,6 +132,8 @@ namespace pryGerhauser_I.E.LP1
                                         matrizProductos[IndiceFila, 2] = varCantidad;
                                         matrizProductos[IndiceFila, 3] = varFecha;
 
+                                        Ventas.vectorProductos[IndiceFila] = varNombre;
+
                                         objetoMain.Listado.matrizProductos[IndiceFila, 0] = varNombre;
                                         objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
                                         objetoMain.Listado.matrizProductos[IndiceFila, 2] = varCantidad;
@@ -142,21 +154,6 @@ namespace pryGerhauser_I.E.LP1
 
                         }
 
-
-                        //matrizProductos[IndiceFila, 0] = varNombre;
-                        //matrizProductos[IndiceFila, 1] = varID;
-                        //matrizProductos[IndiceFila, 2] = varCantidad;
-                        //matrizProductos[IndiceFila, 3] = varFecha;
-
-                        //objetoMain.Listado.matrizProductos[IndiceFila, 0] = varNombre;
-                        //objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
-                        //objetoMain.Listado.matrizProductos[IndiceFila, 2] = varCantidad;
-                        //objetoMain.Listado.matrizProductos[IndiceFila, 3] = varFecha;
-                        
-                        //dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0].ToUpper(), matrizProductos[IndiceFila, 1],
-                        //matrizProductos[IndiceFila, 2], matrizProductos[IndiceFila, 3]);
-
-                        //IndiceFila++;
                     }
                     else
                     {
@@ -173,12 +170,6 @@ namespace pryGerhauser_I.E.LP1
             {
                 lblErrorFecha.Visible = true;
             }
-                
-           
-
         }
-        
-        
-
     }
 }

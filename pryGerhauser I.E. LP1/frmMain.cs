@@ -15,7 +15,6 @@ namespace pryGerhauser_I.E.LP1
             
         public frmListado Listado = new frmListado();
 
-
         public frmMain()
         {
             InitializeComponent();

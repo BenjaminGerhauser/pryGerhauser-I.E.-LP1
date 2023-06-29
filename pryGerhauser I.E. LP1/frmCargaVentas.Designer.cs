@@ -32,22 +32,15 @@
             this.VentanaRegistro = new System.Windows.Forms.TabPage();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.mrcUltimaVenta = new System.Windows.Forms.GroupBox();
-            this.lblDetalle = new System.Windows.Forms.Label();
             this.mrcCargaVenta = new System.Windows.Forms.GroupBox();
-            this.lblErrorCantidad = new System.Windows.Forms.Label();
-            this.lblErrorID = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblCantidad = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
             this.lblPtoducto = new System.Windows.Forms.Label();
             this.nUDCantidad = new System.Windows.Forms.NumericUpDown();
-            this.nUDID = new System.Windows.Forms.NumericUpDown();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.VentanaConsulta = new System.Windows.Forms.TabPage();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.nUDCantidadConsulta = new System.Windows.Forms.NumericUpDown();
             this.rbCantidad = new System.Windows.Forms.RadioButton();
             this.rbProducto = new System.Windows.Forms.RadioButton();
@@ -57,24 +50,21 @@
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlCargaVenta.SuspendLayout();
             this.VentanaRegistro.SuspendLayout();
-            this.mrcUltimaVenta.SuspendLayout();
             this.mrcCargaVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).BeginInit();
             this.VentanaConsulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidadConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -95,7 +85,6 @@
             // 
             this.VentanaRegistro.Controls.Add(this.btnCancelar);
             this.VentanaRegistro.Controls.Add(this.btnRegistrar);
-            this.VentanaRegistro.Controls.Add(this.mrcUltimaVenta);
             this.VentanaRegistro.Controls.Add(this.mrcCargaVenta);
             this.VentanaRegistro.Location = new System.Drawing.Point(4, 22);
             this.VentanaRegistro.Name = "VentanaRegistro";
@@ -107,7 +96,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(193, 383);
+            this.btnCancelar.Location = new System.Drawing.Point(195, 336);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(90, 23);
             this.btnCancelar.TabIndex = 10;
@@ -117,7 +106,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(82, 383);
+            this.btnRegistrar.Location = new System.Drawing.Point(84, 336);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(90, 23);
             this.btnRegistrar.TabIndex = 2;
@@ -125,65 +114,20 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // mrcUltimaVenta
-            // 
-            this.mrcUltimaVenta.Controls.Add(this.lblDetalle);
-            this.mrcUltimaVenta.Location = new System.Drawing.Point(82, 309);
-            this.mrcUltimaVenta.Name = "mrcUltimaVenta";
-            this.mrcUltimaVenta.Size = new System.Drawing.Size(201, 71);
-            this.mrcUltimaVenta.TabIndex = 9;
-            this.mrcUltimaVenta.TabStop = false;
-            this.mrcUltimaVenta.Text = "UltimaVenta";
-            // 
-            // lblDetalle
-            // 
-            this.lblDetalle.AutoSize = true;
-            this.lblDetalle.Location = new System.Drawing.Point(6, 16);
-            this.lblDetalle.Name = "lblDetalle";
-            this.lblDetalle.Size = new System.Drawing.Size(40, 13);
-            this.lblDetalle.TabIndex = 1;
-            this.lblDetalle.Text = "Detalle";
-            // 
             // mrcCargaVenta
             // 
-            this.mrcCargaVenta.Controls.Add(this.lblErrorCantidad);
-            this.mrcCargaVenta.Controls.Add(this.lblErrorID);
             this.mrcCargaVenta.Controls.Add(this.lblTitulo);
             this.mrcCargaVenta.Controls.Add(this.lblFecha);
             this.mrcCargaVenta.Controls.Add(this.lblCantidad);
-            this.mrcCargaVenta.Controls.Add(this.lblID);
             this.mrcCargaVenta.Controls.Add(this.lblPtoducto);
             this.mrcCargaVenta.Controls.Add(this.nUDCantidad);
-            this.mrcCargaVenta.Controls.Add(this.nUDID);
             this.mrcCargaVenta.Controls.Add(this.dtpFecha);
             this.mrcCargaVenta.Controls.Add(this.cmbProducto);
-            this.mrcCargaVenta.Location = new System.Drawing.Point(82, 22);
+            this.mrcCargaVenta.Location = new System.Drawing.Point(84, 43);
             this.mrcCargaVenta.Name = "mrcCargaVenta";
-            this.mrcCargaVenta.Size = new System.Drawing.Size(201, 281);
+            this.mrcCargaVenta.Size = new System.Drawing.Size(201, 259);
             this.mrcCargaVenta.TabIndex = 8;
             this.mrcCargaVenta.TabStop = false;
-            // 
-            // lblErrorCantidad
-            // 
-            this.lblErrorCantidad.AutoSize = true;
-            this.lblErrorCantidad.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorCantidad.Location = new System.Drawing.Point(22, 198);
-            this.lblErrorCantidad.Name = "lblErrorCantidad";
-            this.lblErrorCantidad.Size = new System.Drawing.Size(70, 13);
-            this.lblErrorCantidad.TabIndex = 13;
-            this.lblErrorCantidad.Text = "No hay stock";
-            this.lblErrorCantidad.Visible = false;
-            // 
-            // lblErrorID
-            // 
-            this.lblErrorID.AutoSize = true;
-            this.lblErrorID.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblErrorID.Location = new System.Drawing.Point(21, 116);
-            this.lblErrorID.Name = "lblErrorID";
-            this.lblErrorID.Size = new System.Drawing.Size(136, 26);
-            this.lblErrorID.TabIndex = 12;
-            this.lblErrorID.Text = "ID incorrecto, ingrese \r\nuno valido(minimo 4 digitos)";
-            this.lblErrorID.Visible = false;
             // 
             // lblTitulo
             // 
@@ -199,7 +143,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(21, 221);
+            this.lblFecha.Location = new System.Drawing.Point(21, 172);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(42, 13);
             this.lblFecha.TabIndex = 7;
@@ -209,21 +153,11 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(22, 159);
+            this.lblCantidad.Location = new System.Drawing.Point(21, 99);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(57, 13);
             this.lblCantidad.TabIndex = 6;
             this.lblCantidad.Text = "Cantidad";
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(21, 77);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(20, 13);
-            this.lblID.TabIndex = 5;
-            this.lblID.Text = "ID";
             // 
             // lblPtoducto
             // 
@@ -237,21 +171,14 @@
             // 
             // nUDCantidad
             // 
-            this.nUDCantidad.Location = new System.Drawing.Point(25, 175);
+            this.nUDCantidad.Location = new System.Drawing.Point(24, 115);
             this.nUDCantidad.Name = "nUDCantidad";
-            this.nUDCantidad.Size = new System.Drawing.Size(120, 20);
+            this.nUDCantidad.Size = new System.Drawing.Size(141, 20);
             this.nUDCantidad.TabIndex = 3;
-            // 
-            // nUDID
-            // 
-            this.nUDID.Location = new System.Drawing.Point(24, 93);
-            this.nUDID.Name = "nUDID";
-            this.nUDID.Size = new System.Drawing.Size(120, 20);
-            this.nUDID.TabIndex = 2;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(24, 237);
+            this.dtpFecha.Location = new System.Drawing.Point(24, 188);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(141, 20);
             this.dtpFecha.TabIndex = 1;
@@ -261,12 +188,11 @@
             this.cmbProducto.FormattingEnabled = true;
             this.cmbProducto.Location = new System.Drawing.Point(24, 45);
             this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(121, 21);
+            this.cmbProducto.Size = new System.Drawing.Size(141, 21);
             this.cmbProducto.TabIndex = 0;
             // 
             // VentanaConsulta
             // 
-            this.VentanaConsulta.Controls.Add(this.btnConsultar);
             this.VentanaConsulta.Controls.Add(this.nUDCantidadConsulta);
             this.VentanaConsulta.Controls.Add(this.rbCantidad);
             this.VentanaConsulta.Controls.Add(this.rbProducto);
@@ -280,21 +206,14 @@
             this.VentanaConsulta.Text = "Consultar";
             this.VentanaConsulta.UseVisualStyleBackColor = true;
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(252, 435);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(105, 24);
-            this.btnConsultar.TabIndex = 5;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            // 
             // nUDCantidadConsulta
             // 
             this.nUDCantidadConsulta.Location = new System.Drawing.Point(146, 38);
             this.nUDCantidadConsulta.Name = "nUDCantidadConsulta";
             this.nUDCantidadConsulta.Size = new System.Drawing.Size(84, 20);
             this.nUDCantidadConsulta.TabIndex = 4;
+            this.nUDCantidadConsulta.Visible = false;
+            this.nUDCantidadConsulta.Enter += new System.EventHandler(this.nUDCantidadConsulta_Enter);
             // 
             // rbCantidad
             // 
@@ -306,10 +225,12 @@
             this.rbCantidad.TabStop = true;
             this.rbCantidad.Text = "Cantidad";
             this.rbCantidad.UseVisualStyleBackColor = true;
+            this.rbCantidad.CheckedChanged += new System.EventHandler(this.rbCantidad_CheckedChanged);
             // 
             // rbProducto
             // 
             this.rbProducto.AutoSize = true;
+            this.rbProducto.Checked = true;
             this.rbProducto.Location = new System.Drawing.Point(19, 15);
             this.rbProducto.Name = "rbProducto";
             this.rbProducto.Size = new System.Drawing.Size(68, 17);
@@ -317,14 +238,17 @@
             this.rbProducto.TabStop = true;
             this.rbProducto.Text = "Producto";
             this.rbProducto.UseVisualStyleBackColor = true;
+            this.rbProducto.CheckedChanged += new System.EventHandler(this.rbProducto_CheckedChanged);
             // 
             // cmbProductoConsulta
             // 
+            this.cmbProductoConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProductoConsulta.FormattingEnabled = true;
             this.cmbProductoConsulta.Location = new System.Drawing.Point(19, 38);
             this.cmbProductoConsulta.Name = "cmbProductoConsulta";
             this.cmbProductoConsulta.Size = new System.Drawing.Size(121, 21);
             this.cmbProductoConsulta.TabIndex = 1;
+            this.cmbProductoConsulta.SelectedIndexChanged += new System.EventHandler(this.cmbProductoConsulta_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -336,7 +260,7 @@
             this.Fecha});
             this.dataGridView1.Location = new System.Drawing.Point(6, 76);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(351, 353);
+            this.dataGridView1.Size = new System.Drawing.Size(351, 389);
             this.dataGridView1.TabIndex = 0;
             // 
             // Producto
@@ -360,16 +284,6 @@
             // 
             this.Fecha.HeaderText = "Fecha";
             this.Fecha.Name = "Fecha";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(44, 527);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 17);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
@@ -397,8 +311,20 @@
             this.cargarToolStripMenuItem,
             this.mostrarToolStripMenuItem});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // cargarToolStripMenuItem
+            // 
+            this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
+            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.cargarToolStripMenuItem.Text = "Cargar";
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar";
             // 
             // ventasToolStripMenuItem
             // 
@@ -406,8 +332,20 @@
             this.cargarToolStripMenuItem1,
             this.mostrarToolStripMenuItem1});
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // cargarToolStripMenuItem1
+            // 
+            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
+            this.cargarToolStripMenuItem1.Text = "Cargar";
+            // 
+            // mostrarToolStripMenuItem1
+            // 
+            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
+            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
+            this.mostrarToolStripMenuItem1.Text = "Mostrar";
             // 
             // listadoToolStripMenuItem
             // 
@@ -415,43 +353,19 @@
             this.productosToolStripMenuItem1,
             this.ventasToolStripMenuItem1});
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
-            // 
-            // cargarToolStripMenuItem
-            // 
-            this.cargarToolStripMenuItem.Name = "cargarToolStripMenuItem";
-            this.cargarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cargarToolStripMenuItem.Text = "Cargar";
-            // 
-            // mostrarToolStripMenuItem
-            // 
-            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mostrarToolStripMenuItem.Text = "Mostrar";
-            // 
-            // cargarToolStripMenuItem1
-            // 
-            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
-            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cargarToolStripMenuItem1.Text = "Cargar";
-            // 
-            // mostrarToolStripMenuItem1
-            // 
-            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
-            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.mostrarToolStripMenuItem1.Text = "Mostrar";
             // 
             // productosToolStripMenuItem1
             // 
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.productosToolStripMenuItem1.Text = "Productos";
             // 
             // ventasToolStripMenuItem1
             // 
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.ventasToolStripMenuItem1.Text = "Ventas";
             // 
             // frmCargaVentas
@@ -459,7 +373,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 557);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControlCargaVenta);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -468,12 +381,9 @@
             this.Load += new System.EventHandler(this.frmCargaVentas_Load);
             this.tabControlCargaVenta.ResumeLayout(false);
             this.VentanaRegistro.ResumeLayout(false);
-            this.mrcUltimaVenta.ResumeLayout(false);
-            this.mrcUltimaVenta.PerformLayout();
             this.mrcCargaVenta.ResumeLayout(false);
             this.mrcCargaVenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).EndInit();
             this.VentanaConsulta.ResumeLayout(false);
             this.VentanaConsulta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidadConsulta)).EndInit();
@@ -491,18 +401,12 @@
         private System.Windows.Forms.TabPage VentanaRegistro;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.GroupBox mrcUltimaVenta;
-        private System.Windows.Forms.Label lblDetalle;
         private System.Windows.Forms.GroupBox mrcCargaVenta;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblPtoducto;
-        private System.Windows.Forms.NumericUpDown nUDCantidad;
-        private System.Windows.Forms.NumericUpDown nUDID;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TabPage VentanaConsulta;
-        private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.NumericUpDown nUDCantidadConsulta;
         private System.Windows.Forms.RadioButton rbCantidad;
         private System.Windows.Forms.RadioButton rbProducto;
@@ -513,10 +417,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.ComboBox cmbProducto;
-        private System.Windows.Forms.Label lblErrorCantidad;
-        private System.Windows.Forms.Label lblErrorID;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
@@ -528,5 +429,6 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem1;
+        private System.Windows.Forms.NumericUpDown nUDCantidad;
     }
 }
