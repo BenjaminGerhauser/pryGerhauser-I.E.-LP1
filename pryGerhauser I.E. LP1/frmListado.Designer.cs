@@ -28,154 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
+            this.cboProductos = new System.Windows.Forms.ComboBox();
+            this.rbProdcuctos = new System.Windows.Forms.RadioButton();
+            this.rbVentas = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.lblProductos = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewVentas = new System.Windows.Forms.DataGridView();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaConsulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rbProductos = new System.Windows.Forms.RadioButton();
-            this.rbVentas = new System.Windows.Forms.RadioButton();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.cmbProductos = new System.Windows.Forms.ComboBox();
-            this.lblProducto = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVentas)).BeginInit();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridViewProductos
+            // cboProductos
             // 
-            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cboProductos.FormattingEnabled = true;
+            this.cboProductos.Location = new System.Drawing.Point(148, 64);
+            this.cboProductos.Name = "cboProductos";
+            this.cboProductos.Size = new System.Drawing.Size(121, 21);
+            this.cboProductos.TabIndex = 0;
+            // 
+            // rbProdcuctos
+            // 
+            this.rbProdcuctos.AutoSize = true;
+            this.rbProdcuctos.Location = new System.Drawing.Point(25, 22);
+            this.rbProdcuctos.Name = "rbProdcuctos";
+            this.rbProdcuctos.Size = new System.Drawing.Size(73, 17);
+            this.rbProdcuctos.TabIndex = 1;
+            this.rbProdcuctos.TabStop = true;
+            this.rbProdcuctos.Text = "Productos";
+            this.rbProdcuctos.UseVisualStyleBackColor = true;
+            // 
+            // rbVentas
+            // 
+            this.rbVentas.AutoSize = true;
+            this.rbVentas.Location = new System.Drawing.Point(126, 22);
+            this.rbVentas.Name = "rbVentas";
+            this.rbVentas.Size = new System.Drawing.Size(58, 17);
+            this.rbVentas.TabIndex = 2;
+            this.rbVentas.TabStop = true;
+            this.rbVentas.Text = "Ventas";
+            this.rbVentas.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.ID,
+            this.Cantidad,
             this.Fecha});
-            this.dataGridViewProductos.Location = new System.Drawing.Point(31, 116);
-            this.dataGridViewProductos.Name = "dataGridViewProductos";
-            this.dataGridViewProductos.Size = new System.Drawing.Size(300, 205);
-            this.dataGridViewProductos.TabIndex = 0;
+            this.dataGridView1.Location = new System.Drawing.Point(25, 118);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(442, 182);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre2,
+            this.ID2,
+            this.Cantidad2,
+            this.Fecha2});
+            this.dataGridView2.Location = new System.Drawing.Point(25, 306);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(442, 182);
+            this.dataGridView2.TabIndex = 4;
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(524, 277);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(72, 23);
+            this.btnListar.TabIndex = 5;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // lblProductos
+            // 
+            this.lblProductos.AutoSize = true;
+            this.lblProductos.Location = new System.Drawing.Point(22, 67);
+            this.lblProductos.Name = "lblProductos";
+            this.lblProductos.Size = new System.Drawing.Size(120, 13);
+            this.lblProductos.TabIndex = 6;
+            this.lblProductos.Text = "Seleccione un producto";
             // 
             // Nombre
             // 
-            this.Nombre.Frozen = true;
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
             // 
             // ID
             // 
-            this.ID.Frozen = true;
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
-            this.ID.Width = 55;
-            // 
-            // Fecha
-            // 
-            this.Fecha.Frozen = true;
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // dataGridViewVentas
-            // 
-            this.dataGridViewVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Producto,
-            this.IDConsulta,
-            this.Cantidad,
-            this.FechaConsulta});
-            this.dataGridViewVentas.Location = new System.Drawing.Point(364, 116);
-            this.dataGridViewVentas.Name = "dataGridViewVentas";
-            this.dataGridViewVentas.Size = new System.Drawing.Size(355, 205);
-            this.dataGridViewVentas.TabIndex = 1;
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            // 
-            // IDConsulta
-            // 
-            this.IDConsulta.HeaderText = "ID";
-            this.IDConsulta.Name = "IDConsulta";
-            this.IDConsulta.Width = 55;
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 55;
             // 
-            // FechaConsulta
+            // Fecha
             // 
-            this.FechaConsulta.HeaderText = "Fecha";
-            this.FechaConsulta.Name = "FechaConsulta";
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
             // 
-            // rbProductos
+            // Nombre2
             // 
-            this.rbProductos.AutoSize = true;
-            this.rbProductos.Location = new System.Drawing.Point(31, 45);
-            this.rbProductos.Name = "rbProductos";
-            this.rbProductos.Size = new System.Drawing.Size(109, 17);
-            this.rbProductos.TabIndex = 2;
-            this.rbProductos.TabStop = true;
-            this.rbProductos.Text = "Listado productos";
-            this.rbProductos.UseVisualStyleBackColor = true;
+            this.Nombre2.HeaderText = "Nombre";
+            this.Nombre2.Name = "Nombre2";
             // 
-            // rbVentas
+            // ID2
             // 
-            this.rbVentas.AutoSize = true;
-            this.rbVentas.Location = new System.Drawing.Point(146, 45);
-            this.rbVentas.Name = "rbVentas";
-            this.rbVentas.Size = new System.Drawing.Size(94, 17);
-            this.rbVentas.TabIndex = 3;
-            this.rbVentas.TabStop = true;
-            this.rbVentas.Text = "Listado ventas";
-            this.rbVentas.UseVisualStyleBackColor = true;
+            this.ID2.HeaderText = "ID";
+            this.ID2.Name = "ID2";
             // 
-            // btnConsultar
+            // Cantidad2
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(230, 371);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(101, 41);
-            this.btnConsultar.TabIndex = 4;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.Cantidad2.HeaderText = "Cantidad";
+            this.Cantidad2.Name = "Cantidad2";
             // 
-            // cmbProductos
+            // Fecha2
             // 
-            this.cmbProductos.FormattingEnabled = true;
-            this.cmbProductos.Location = new System.Drawing.Point(127, 78);
-            this.cmbProductos.Name = "cmbProductos";
-            this.cmbProductos.Size = new System.Drawing.Size(116, 21);
-            this.cmbProductos.TabIndex = 5;
-            // 
-            // lblProducto
-            // 
-            this.lblProducto.AutoSize = true;
-            this.lblProducto.Location = new System.Drawing.Point(28, 81);
-            this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(93, 13);
-            this.lblProducto.TabIndex = 6;
-            this.lblProducto.Text = "Elegi un producto:";
+            this.Fecha2.HeaderText = "Fecha";
+            this.Fecha2.Name = "Fecha2";
             // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblProducto);
-            this.Controls.Add(this.cmbProductos);
-            this.Controls.Add(this.btnConsultar);
+            this.ClientSize = new System.Drawing.Size(800, 625);
+            this.Controls.Add(this.lblProductos);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rbVentas);
-            this.Controls.Add(this.rbProductos);
-            this.Controls.Add(this.dataGridViewVentas);
-            this.Controls.Add(this.dataGridViewProductos);
+            this.Controls.Add(this.rbProdcuctos);
+            this.Controls.Add(this.cboProductos);
             this.Name = "frmListado";
             this.Text = "frmListado";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,19 +185,20 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewProductos;
+        private System.Windows.Forms.ComboBox cboProductos;
+        private System.Windows.Forms.RadioButton rbProdcuctos;
+        private System.Windows.Forms.RadioButton rbVentas;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridView dataGridViewVentas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaConsulta;
-        private System.Windows.Forms.RadioButton rbProductos;
-        private System.Windows.Forms.RadioButton rbVentas;
-        private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.ComboBox cmbProductos;
-        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha2;
     }
 }
