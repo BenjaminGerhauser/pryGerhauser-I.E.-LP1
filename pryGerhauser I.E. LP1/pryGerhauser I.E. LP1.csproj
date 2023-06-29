@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kisspng-computer-icons-clip-art-list-5ac11043816017.5795224215226020515299.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -109,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-menu-computer-icons-button-menu-designs-5b2fd502079f35.6844543215298613780313.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kisspng-computer-icons-clip-art-list-5ac11043816017.5795224215226020515299.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

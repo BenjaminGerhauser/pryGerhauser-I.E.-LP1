@@ -13,95 +13,89 @@ namespace pryGerhauser_I.E.LP1
     public partial class frmListado : Form
     {
 
-        public string[,] matrizProductos = new string[10, 4];
+        public string[,] matrizProductos = new string[10, 3];
+
         public string[,] matrizVentas = new string[10, 4];
 
         public frmListado()
         {
             InitializeComponent();
-           
+
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            dataGridViewProductos.Rows.Clear();
+            dataGridViewListado.Rows.Clear();
 
-            for (int f = 0; f < matrizProductos.GetLength(0); f++)
+            if (rbProdcuctos.Checked)
             {
-                if (matrizProductos[f, 0] != null) 
+
+                for (int i = 0; i < 10; i++)
                 {
-                    dataGridViewProductos.Rows.Add(matrizProductos[f, 0].ToUpper(), matrizProductos[f, 1],
-                        matrizProductos[f, 2], matrizProductos[f, 3]);
+                    if (matrizProductos[i, 0] != null)
+                    {
+                        dataGridViewListado.Rows.Add(matrizProductos[i, 0], matrizProductos[i, 1],"", matrizProductos[i, 3]);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    if (matrizVentas[i, 0] != null)
+                    {
+                        dataGridViewListado.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1],
+                        matrizVentas[i, 2], matrizVentas[i, 3]);
+                    }
                 }
             }
 
+
         }
 
-        private void rbVentas_CheckedChanged(object sender, EventArgs e)
-        {
-
-            dataGridViewProductos.Visible = false;
-            if (rbVentas.Checked)
-            {
-
-                lblProductos.Visible = true;
-                cboProductos.Visible = true;
-                dataGridViewVentas.Visible = true;
-            }
-            
-        }
-
-        private void frmListado_Load(object sender, EventArgs e)
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                if (matrizProductos[i, 0] != null && cboProductos.Items.ToString() != matrizProductos[i, 0])
-                {
-                    cboProductos.Items.Add(matrizProductos[i, 0].ToUpper());
-                }
-            }
-        }
-
+        
         private void cboProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dataGridViewVentas.Rows.Clear();
+            dataGridViewListado.Rows.Clear();
 
             for (int f = 0; f < 10; f++)
             {
-                if (matrizVentas[f, 0] != null)
+                if (matrizVentas[f, 0] == cboProductos.Text)
                 {
-                    dataGridViewVentas.Rows.Add(matrizVentas[f, 0].ToUpper(), matrizVentas[f, 1],
-                       matrizVentas[f, 2], matrizVentas[f, 3]);
+                    dataGridViewListado.Rows.Add(matrizVentas[f, 0], matrizVentas[f, 1],
+                       matrizVentas[f, 2], matrizVentas[f, 3]); 
 
                 }
 
+            }
+        }
+
+        
+
+        private void rbVentas_CheckedChanged(object sender, EventArgs e)
+        {
+            lblProductos.Visible = true;
+            cboProductos.Visible = true;
+
+            for (int i = 0; i < 10; i++)
+            {
+                if( matrizVentas[i, 0] != null)
+                {
+                    if (cboProductos.Items.Contains(matrizVentas[i, 0]) == false)
+                    {
+                        cboProductos.Items.Add(matrizVentas[i, 0]);
+
+                    }
+                }
             }
         }
 
         private void rbProdcuctos_CheckedChanged(object sender, EventArgs e)
         {
-            dataGridViewVentas.Visible = false;
-
-
-            if (rbProdcuctos.Checked) 
-            { 
-                dataGridViewProductos.Rows.Clear();
-
-                for (int f = 0; f < matrizProductos.GetLength(0); f++)
-                {
-                    if (matrizProductos[f, 0] != null)
-                    {
-                        dataGridViewProductos.Rows.Add(matrizProductos[f, 0].ToUpper(), matrizProductos[f, 1],
-                            matrizProductos[f, 2], matrizProductos[f, 3]);
-                    }
-                }
-
-                lblProductos.Visible = false;
-                cboProductos.Visible = false;
-                dataGridViewProductos.Visible = true;
-            }
-
-
+            lblProductos.Visible = false;
+            cboProductos.Visible = false;
         }
+
+       
     }
 }

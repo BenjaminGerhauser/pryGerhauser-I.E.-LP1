@@ -12,7 +12,7 @@ namespace pryGerhauser_I.E.LP1
 {
     public partial class frmCargaProducto : Form
     {
-        string varFecha, varNombre, varID, varCantidad;
+        string varFecha, varNombre, varID;
         int IndiceFila, varAux;
 
         frmMain objetoMain = new frmMain();
@@ -22,29 +22,19 @@ namespace pryGerhauser_I.E.LP1
 
 
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ventas.ShowDialog();
+        }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objetoMain.Listado.ShowDialog();
         }
 
-        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Ventas.ShowDialog();
-        }
-
-        private void btnConsultar_Click(object sender, EventArgs e)
-        {
-            dataGridViewConsultaProducto.Rows.Clear();
-
-            for (int f = 0; f < matrizProductos.GetLength(0); f++)
-            {
-                if (matrizProductos[f, 0] != null)
-                {
-                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[f, 0].ToUpper(), matrizProductos[f, 1],
-                        matrizProductos[f, 2], matrizProductos[f, 3]);
-                }
-            }
-        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -64,14 +54,13 @@ namespace pryGerhauser_I.E.LP1
             if (dtpFecha.Value >= DateTime.Today)
             {
                 varFecha = dtpFecha.Value.ToString();
-                varCantidad = nUDCantidad.Value.ToString();
+                
+                lblErrorFecha.Visible = false;
                 if (txtNombre.Text != "")
                 {
-                    varNombre = txtNombre.Text.ToLower();
-                    if (nUDID.Value < 9999)
-                    {
-                        varID = nUDID.Value.ToString();
-
+                    varNombre = txtNombre.Text;
+                    
+                    varID = nUDID.Value.ToString();
 
 
                         for (int f = 0; f < 10; f++)
@@ -82,20 +71,22 @@ namespace pryGerhauser_I.E.LP1
                                 {
                                     matrizProductos[IndiceFila, 0] = varNombre;
                                     matrizProductos[IndiceFila, 1] = varID;
-                                    matrizProductos[IndiceFila, 2] = varCantidad;
-                                    matrizProductos[IndiceFila, 3] = varFecha;
+                                    matrizProductos[IndiceFila, 2] = varFecha;
 
-                                    Ventas.vectorProductos[IndiceFila] = varNombre;
 
                                     objetoMain.Listado.matrizProductos[IndiceFila, 0] = varNombre;
                                     objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
-                                    objetoMain.Listado.matrizProductos[IndiceFila, 2] = varCantidad;
-                                    objetoMain.Listado.matrizProductos[IndiceFila, 3] = varFecha;
+                                    objetoMain.Listado.matrizProductos[IndiceFila, 2] = varFecha;
 
-                                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0].ToUpper(), matrizProductos[IndiceFila, 1],
-                                    matrizProductos[IndiceFila, 2], matrizProductos[IndiceFila, 3]);
+                                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0], matrizProductos[IndiceFila, 1],matrizProductos[IndiceFila, 2]);
 
                                     lblErrorID.Visible = false;
+                                    lblErrorFecha.Visible = false;
+                                    lblErrorNombre.Visible = false;
+                                MessageBox.Show("Producto cargado");
+                                txtNombre.Text = string.Empty;
+                                
+                                nUDID.Value = 0;
 
                                     IndiceFila++;
 
@@ -129,37 +120,34 @@ namespace pryGerhauser_I.E.LP1
                                     {
                                         matrizProductos[IndiceFila, 0] = varNombre;
                                         matrizProductos[IndiceFila, 1] = varID;
-                                        matrizProductos[IndiceFila, 2] = varCantidad;
-                                        matrizProductos[IndiceFila, 3] = varFecha;
+                                        matrizProductos[IndiceFila, 2] = varFecha;
 
-                                        Ventas.vectorProductos[IndiceFila] = varNombre;
 
                                         objetoMain.Listado.matrizProductos[IndiceFila, 0] = varNombre;
                                         objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
-                                        objetoMain.Listado.matrizProductos[IndiceFila, 2] = varCantidad;
-                                        objetoMain.Listado.matrizProductos[IndiceFila, 3] = varFecha;
+                                        objetoMain.Listado.matrizProductos[IndiceFila, 2] = varFecha;
 
-                                        lblErrorID.Visible = false;
+                                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0], matrizProductos[IndiceFila, 1],matrizProductos[IndiceFila, 2]);
+                                    lblErrorID.Visible = false;
+                                    lblErrorFecha.Visible = false;
+                                    lblErrorNombre.Visible = false;
+                                    MessageBox.Show("Producto cargado");
+                                    txtNombre.Text = string.Empty;
+                                   
+                                    nUDID.Value = 0;
 
-                                        IndiceFila++;
+                                    IndiceFila++;
 
                                         break;
                                     }
                                     else
                                     {
-                                        break;
+                                       
                                     }
                                 }
                             }
 
                         }
-
-                    }
-                    else
-                    {
-                        lblErrorID.Visible = true;
-                        nUDID.Value = 0;
-                    }
                 }
                 else
                 {

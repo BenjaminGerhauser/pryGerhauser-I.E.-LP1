@@ -28,11 +28,15 @@ namespace pryGerhauser_I.E.LP1
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCargaProducto CargaProducto = new frmCargaProducto();
-            frmCargaVentas CargaVentas = new frmCargaVentas();
 
             CargaProducto.ShowDialog();
         }
 
-       
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCargaVentas CargaVentas = new frmCargaVentas();
+            CargaVentas.ShowDialog();
+        }
+
     }
 }
