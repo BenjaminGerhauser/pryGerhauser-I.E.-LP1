@@ -80,6 +80,7 @@
             // 
             // VentanaRegistro
             // 
+            this.VentanaRegistro.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.VentanaRegistro.Controls.Add(this.btnRegistrar);
             this.VentanaRegistro.Controls.Add(this.mrcCargaVenta);
             this.VentanaRegistro.Location = new System.Drawing.Point(4, 22);
@@ -88,7 +89,6 @@
             this.VentanaRegistro.Size = new System.Drawing.Size(365, 510);
             this.VentanaRegistro.TabIndex = 0;
             this.VentanaRegistro.Text = "Registrar";
-            this.VentanaRegistro.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
@@ -202,6 +202,7 @@
             // 
             // VentanaConsulta
             // 
+            this.VentanaConsulta.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.VentanaConsulta.Controls.Add(this.cboProductosConsulta);
             this.VentanaConsulta.Controls.Add(this.txtProductoConsulta);
             this.VentanaConsulta.Controls.Add(this.btnConsultar);
@@ -215,7 +216,6 @@
             this.VentanaConsulta.Size = new System.Drawing.Size(365, 510);
             this.VentanaConsulta.TabIndex = 1;
             this.VentanaConsulta.Text = "Consultar";
-            this.VentanaConsulta.UseVisualStyleBackColor = true;
             // 
             // cboProductosConsulta
             // 
@@ -280,6 +280,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
@@ -320,6 +321,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -339,15 +341,17 @@
             // 
             // productosToolStripMenuItem
             // 
+            this.productosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
             // listadoToolStripMenuItem
             // 
+            this.listadoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
@@ -355,6 +359,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(399, 566);
             this.Controls.Add(this.tabControlCargaVenta);
             this.Controls.Add(this.menuStrip1);

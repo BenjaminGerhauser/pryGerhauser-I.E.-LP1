@@ -65,7 +65,7 @@
             // 
             this.tabControlCargaProducto.Controls.Add(this.VentanaRegistro);
             this.tabControlCargaProducto.Controls.Add(this.VentanaConsulta);
-            this.tabControlCargaProducto.Location = new System.Drawing.Point(46, 43);
+            this.tabControlCargaProducto.Location = new System.Drawing.Point(44, 41);
             this.tabControlCargaProducto.Name = "tabControlCargaProducto";
             this.tabControlCargaProducto.SelectedIndex = 0;
             this.tabControlCargaProducto.Size = new System.Drawing.Size(335, 432);
@@ -73,6 +73,7 @@
             // 
             // VentanaRegistro
             // 
+            this.VentanaRegistro.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.VentanaRegistro.Controls.Add(this.mrcRegistro);
             this.VentanaRegistro.Controls.Add(this.btnRegistrar);
             this.VentanaRegistro.Location = new System.Drawing.Point(4, 22);
@@ -81,10 +82,10 @@
             this.VentanaRegistro.Size = new System.Drawing.Size(327, 406);
             this.VentanaRegistro.TabIndex = 0;
             this.VentanaRegistro.Text = "Registrar";
-            this.VentanaRegistro.UseVisualStyleBackColor = true;
             // 
             // mrcRegistro
             // 
+            this.mrcRegistro.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.mrcRegistro.Controls.Add(this.lblErrorFecha);
             this.mrcRegistro.Controls.Add(this.lblErrorID);
             this.mrcRegistro.Controls.Add(this.lblErrorNombre);
@@ -212,6 +213,7 @@
             // 
             // VentanaConsulta
             // 
+            this.VentanaConsulta.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.VentanaConsulta.Controls.Add(this.dataGridViewConsultaProducto);
             this.VentanaConsulta.Location = new System.Drawing.Point(4, 22);
             this.VentanaConsulta.Name = "VentanaConsulta";
@@ -219,19 +221,19 @@
             this.VentanaConsulta.Size = new System.Drawing.Size(327, 406);
             this.VentanaConsulta.TabIndex = 1;
             this.VentanaConsulta.Text = "Consultar";
-            this.VentanaConsulta.UseVisualStyleBackColor = true;
             // 
             // dataGridViewConsultaProducto
             // 
+            this.dataGridViewConsultaProducto.BackgroundColor = System.Drawing.SystemColors.ControlText;
             this.dataGridViewConsultaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewConsultaProducto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.ID,
             this.Fecha});
-            this.dataGridViewConsultaProducto.Location = new System.Drawing.Point(11, 6);
+            this.dataGridViewConsultaProducto.Location = new System.Drawing.Point(15, 6);
             this.dataGridViewConsultaProducto.Name = "dataGridViewConsultaProducto";
             this.dataGridViewConsultaProducto.ReadOnly = true;
-            this.dataGridViewConsultaProducto.Size = new System.Drawing.Size(301, 394);
+            this.dataGridViewConsultaProducto.Size = new System.Drawing.Size(299, 394);
             this.dataGridViewConsultaProducto.TabIndex = 0;
             // 
             // Nombre
@@ -255,6 +257,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -265,6 +268,7 @@
             // 
             // menuToolStripMenuItem
             // 
+            this.menuToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ventasToolStripMenuItem,
             this.listadoToolStripMenuItem});
@@ -274,15 +278,17 @@
             // 
             // ventasToolStripMenuItem
             // 
+            this.ventasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ventasToolStripMenuItem.Text = "Ventas";
             this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
             // 
             // listadoToolStripMenuItem
             // 
+            this.listadoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
@@ -290,6 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(426, 487);
             this.Controls.Add(this.tabControlCargaProducto);
             this.Controls.Add(this.menuStrip1);
