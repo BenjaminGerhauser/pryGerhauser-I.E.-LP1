@@ -38,7 +38,9 @@ namespace pryGerhauser_I.E.LP1
                         {
                             frmMain Inicio = new frmMain();
                             this.Hide();
+                            Inicio.lblBienvenida.Text = Usuarios[i, 0];
                             Inicio.ShowDialog();
+                            
                         }    
                     }
 
@@ -53,11 +55,11 @@ namespace pryGerhauser_I.E.LP1
         {
             if (chkMostrar.Checked)
             {
-                txtContraseña.UseSystemPasswordChar = true;
+                txtContraseña.UseSystemPasswordChar = false;
             }
             else
             {
-                txtContraseña.UseSystemPasswordChar = false;
+                txtContraseña.UseSystemPasswordChar = true;
 
             }
         }

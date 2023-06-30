@@ -63,7 +63,7 @@ namespace pryGerhauser_I.E.LP1
                     varID = nUDID.Value.ToString();
 
 
-                        for (int f = 0; f < 10; f++)
+                        for (int f = 0; f < matrizProductos.GetLength(0); f++)
                         {
                             if(varNombre == matrizProductos[f, 0])
                             {

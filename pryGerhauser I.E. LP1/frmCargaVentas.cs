@@ -28,7 +28,7 @@ namespace pryGerhauser_I.E.LP1
             cboProductosConsulta.Enabled = true;
             
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < matrizVentas.GetLength(0); i++)
                 {
                     if (matrizVentas[i, 0] != null)
                     {
@@ -76,7 +76,7 @@ namespace pryGerhauser_I.E.LP1
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < matrizVentas.GetLength(0); i++)
             { 
                 if (matrizVentas[i, 0] != null)
                 {
@@ -95,7 +95,7 @@ namespace pryGerhauser_I.E.LP1
             {
                 if(int.Parse(txtProductoConsulta.Text) > 0 && int.Parse(txtProductoConsulta.Text) < 10000)
                 {
-                    for (int i = 0; i < 10; i++)
+                    for (int i = 0; i < matrizVentas.GetLength(0); i++)
                     {
                         if (Convert.ToInt16(matrizVentas[i, 2]) >= Convert.ToInt16(txtProductoConsulta.Text) && matrizVentas[i, 2] != null)
                         {
@@ -108,7 +108,7 @@ namespace pryGerhauser_I.E.LP1
             else if(rbProducto.Checked)
             {
                
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < matrizVentas.GetLength(0); i++)
                 {
                     if (matrizVentas[i, 0] != null)
                     {

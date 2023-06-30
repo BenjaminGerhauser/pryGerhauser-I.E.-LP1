@@ -30,7 +30,7 @@ namespace pryGerhauser_I.E.LP1
             if (rbProdcuctos.Checked)
             {
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < matrizProductos.GetLength(0); i++)
                 {
                     if (matrizProductos[i, 0] != null)
                     {
@@ -40,7 +40,7 @@ namespace pryGerhauser_I.E.LP1
             }
             else
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < matrizVentas.GetLength(0); i++)
                 {
                     if (matrizVentas[i, 0] != null)
                     {
@@ -58,7 +58,7 @@ namespace pryGerhauser_I.E.LP1
         {
             dataGridViewListado.Rows.Clear();
 
-            for (int f = 0; f < 10; f++)
+            for (int f = 0; f < matrizVentas.GetLength(0); f++)
             {
                 if (matrizVentas[f, 0] == cboProductos.Text)
                 {
@@ -77,7 +77,7 @@ namespace pryGerhauser_I.E.LP1
             lblProductos.Visible = true;
             cboProductos.Visible = true;
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < matrizVentas.GetLength(0); i++)
             {
                 if( matrizVentas[i, 0] != null)
                 {

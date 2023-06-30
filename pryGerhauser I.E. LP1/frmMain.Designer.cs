@@ -35,6 +35,8 @@
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mrcTitulo = new System.Windows.Forms.GroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblBienvenida = new System.Windows.Forms.Label();
+            this.lblTituloBienvenida = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.mrcTitulo.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +97,32 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Sistema de registro";
             // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblBienvenida.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblBienvenida.Location = new System.Drawing.Point(109, 134);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(46, 17);
+            this.lblBienvenida.TabIndex = 7;
+            this.lblBienvenida.Text = "label1";
+            // 
+            // lblTituloBienvenida
+            // 
+            this.lblTituloBienvenida.ActiveLinkColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTituloBienvenida.AutoSize = true;
+            this.lblTituloBienvenida.BackColor = System.Drawing.SystemColors.ControlText;
+            this.lblTituloBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTituloBienvenida.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblTituloBienvenida.LinkColor = System.Drawing.Color.White;
+            this.lblTituloBienvenida.Location = new System.Drawing.Point(91, 97);
+            this.lblTituloBienvenida.Name = "lblTituloBienvenida";
+            this.lblTituloBienvenida.Size = new System.Drawing.Size(87, 20);
+            this.lblTituloBienvenida.TabIndex = 8;
+            this.lblTituloBienvenida.TabStop = true;
+            this.lblTituloBienvenida.Text = "Bienvenido";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +130,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(274, 335);
+            this.Controls.Add(this.lblTituloBienvenida);
+            this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.mrcTitulo);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -128,5 +158,7 @@
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.GroupBox mrcTitulo;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.LinkLabel lblTituloBienvenida;
+        public System.Windows.Forms.Label lblBienvenida;
     }
 }
