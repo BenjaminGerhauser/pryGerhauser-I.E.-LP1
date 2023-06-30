@@ -45,7 +45,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(39, 20);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(57, 15);
-            this.lblUsuario.TabIndex = 0;
+            this.lblUsuario.TabIndex = 5;
             this.lblUsuario.Text = "Usuario";
             // 
             // lblContraseña
@@ -55,7 +55,7 @@
             this.lblContraseña.Location = new System.Drawing.Point(39, 88);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(80, 15);
-            this.lblContraseña.TabIndex = 1;
+            this.lblContraseña.TabIndex = 0;
             this.lblContraseña.Text = "Contraseña";
             // 
             // txtUsuario
@@ -63,14 +63,14 @@
             this.txtUsuario.Location = new System.Drawing.Point(42, 43);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabIndex = 1;
             // 
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(42, 106);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(100, 20);
-            this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.TabIndex = 2;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // btnIngresar
@@ -97,7 +97,7 @@
             this.mrcInicio.Location = new System.Drawing.Point(37, 29);
             this.mrcInicio.Name = "mrcInicio";
             this.mrcInicio.Size = new System.Drawing.Size(185, 233);
-            this.mrcInicio.TabIndex = 6;
+            this.mrcInicio.TabIndex = 0;
             this.mrcInicio.TabStop = false;
             // 
             // chkMostrar
@@ -106,7 +106,7 @@
             this.chkMostrar.Location = new System.Drawing.Point(42, 141);
             this.chkMostrar.Name = "chkMostrar";
             this.chkMostrar.Size = new System.Drawing.Size(117, 17);
-            this.chkMostrar.TabIndex = 5;
+            this.chkMostrar.TabIndex = 3;
             this.chkMostrar.Text = "Mostrar contraseña";
             this.chkMostrar.UseVisualStyleBackColor = true;
             this.chkMostrar.CheckedChanged += new System.EventHandler(this.chkMostrar_CheckedChanged);

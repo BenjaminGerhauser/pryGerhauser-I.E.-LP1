@@ -51,7 +51,7 @@
             this.cboProductos.Location = new System.Drawing.Point(84, 66);
             this.cboProductos.Name = "cboProductos";
             this.cboProductos.Size = new System.Drawing.Size(133, 21);
-            this.cboProductos.TabIndex = 0;
+            this.cboProductos.TabIndex = 3;
             this.cboProductos.Visible = false;
             this.cboProductos.SelectedIndexChanged += new System.EventHandler(this.cboProductos_SelectedIndexChanged);
             // 
@@ -91,7 +91,7 @@
             this.dataGridViewListado.Name = "dataGridViewListado";
             this.dataGridViewListado.ReadOnly = true;
             this.dataGridViewListado.Size = new System.Drawing.Size(444, 272);
-            this.dataGridViewListado.TabIndex = 3;
+            this.dataGridViewListado.TabIndex = 1;
             // 
             // Nombre
             // 
@@ -124,7 +124,7 @@
             this.btnListar.Location = new System.Drawing.Point(25, 406);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(98, 23);
-            this.btnListar.TabIndex = 5;
+            this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar todo";
             this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
@@ -150,7 +150,7 @@
             this.mrcFiltro.Location = new System.Drawing.Point(25, 9);
             this.mrcFiltro.Name = "mrcFiltro";
             this.mrcFiltro.Size = new System.Drawing.Size(444, 101);
-            this.mrcFiltro.TabIndex = 7;
+            this.mrcFiltro.TabIndex = 0;
             this.mrcFiltro.TabStop = false;
             this.mrcFiltro.Text = "Filtro";
             // 

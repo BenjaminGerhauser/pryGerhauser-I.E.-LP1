@@ -69,7 +69,7 @@
             this.tabControlCargaProducto.Name = "tabControlCargaProducto";
             this.tabControlCargaProducto.SelectedIndex = 0;
             this.tabControlCargaProducto.Size = new System.Drawing.Size(335, 432);
-            this.tabControlCargaProducto.TabIndex = 0;
+            this.tabControlCargaProducto.TabIndex = 1;
             // 
             // VentanaRegistro
             // 
@@ -99,7 +99,7 @@
             this.mrcRegistro.Location = new System.Drawing.Point(59, 46);
             this.mrcRegistro.Name = "mrcRegistro";
             this.mrcRegistro.Size = new System.Drawing.Size(207, 265);
-            this.mrcRegistro.TabIndex = 7;
+            this.mrcRegistro.TabIndex = 0;
             this.mrcRegistro.TabStop = false;
             // 
             // lblErrorFecha
@@ -131,7 +131,7 @@
             this.lblErrorNombre.Location = new System.Drawing.Point(31, 73);
             this.lblErrorNombre.Name = "lblErrorNombre";
             this.lblErrorNombre.Size = new System.Drawing.Size(126, 13);
-            this.lblErrorNombre.TabIndex = 7;
+            this.lblErrorNombre.TabIndex = 3;
             this.lblErrorNombre.Text = "Ingrese un nombre valido";
             this.lblErrorNombre.Visible = false;
             // 
@@ -180,7 +180,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(34, 200);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(139, 20);
-            this.dtpFecha.TabIndex = 2;
+            this.dtpFecha.TabIndex = 3;
             // 
             // txtNombre
             // 
@@ -199,7 +199,7 @@
             0});
             this.nUDID.Name = "nUDID";
             this.nUDID.Size = new System.Drawing.Size(94, 20);
-            this.nUDID.TabIndex = 0;
+            this.nUDID.TabIndex = 2;
             // 
             // btnRegistrar
             // 
@@ -265,7 +265,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(426, 24);
-            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
@@ -282,7 +282,7 @@
             // 
             this.ventasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.ventasToolStripMenuItem.Text = "Ventas";
             this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
             // 
@@ -290,7 +290,7 @@
             // 
             this.listadoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 

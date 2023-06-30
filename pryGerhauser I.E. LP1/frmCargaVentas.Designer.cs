@@ -76,7 +76,7 @@
             this.tabControlCargaVenta.Name = "tabControlCargaVenta";
             this.tabControlCargaVenta.SelectedIndex = 0;
             this.tabControlCargaVenta.Size = new System.Drawing.Size(373, 536);
-            this.tabControlCargaVenta.TabIndex = 0;
+            this.tabControlCargaVenta.TabIndex = 1;
             // 
             // VentanaRegistro
             // 
@@ -97,7 +97,7 @@
             this.btnRegistrar.Location = new System.Drawing.Point(138, 374);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(90, 27);
-            this.btnRegistrar.TabIndex = 2;
+            this.btnRegistrar.TabIndex = 1;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
@@ -116,7 +116,7 @@
             this.mrcCargaVenta.Location = new System.Drawing.Point(84, 81);
             this.mrcCargaVenta.Name = "mrcCargaVenta";
             this.mrcCargaVenta.Size = new System.Drawing.Size(201, 259);
-            this.mrcCargaVenta.TabIndex = 8;
+            this.mrcCargaVenta.TabIndex = 0;
             this.mrcCargaVenta.TabStop = false;
             // 
             // nUDID
@@ -124,7 +124,7 @@
             this.nUDID.Location = new System.Drawing.Point(23, 150);
             this.nUDID.Name = "nUDID";
             this.nUDID.Size = new System.Drawing.Size(141, 20);
-            this.nUDID.TabIndex = 14;
+            this.nUDID.TabIndex = 3;
             // 
             // lblID
             // 
@@ -141,7 +141,7 @@
             this.txtProdcuto.Location = new System.Drawing.Point(24, 47);
             this.txtProdcuto.Name = "txtProdcuto";
             this.txtProdcuto.Size = new System.Drawing.Size(140, 20);
-            this.txtProdcuto.TabIndex = 12;
+            this.txtProdcuto.TabIndex = 1;
             // 
             // lblTitulo
             // 
@@ -188,7 +188,7 @@
             this.nUDCantidad.Location = new System.Drawing.Point(23, 101);
             this.nUDCantidad.Name = "nUDCantidad";
             this.nUDCantidad.Size = new System.Drawing.Size(141, 20);
-            this.nUDCantidad.TabIndex = 3;
+            this.nUDCantidad.TabIndex = 2;
             this.nUDCantidad.Value = new decimal(new int[] {
             1,
             0,
@@ -200,7 +200,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(23, 206);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(141, 20);
-            this.dtpFecha.TabIndex = 1;
+            this.dtpFecha.TabIndex = 4;
             // 
             // VentanaConsulta
             // 
@@ -226,14 +226,14 @@
             this.cboProductosConsulta.Location = new System.Drawing.Point(19, 37);
             this.cboProductosConsulta.Name = "cboProductosConsulta";
             this.cboProductosConsulta.Size = new System.Drawing.Size(100, 21);
-            this.cboProductosConsulta.TabIndex = 8;
+            this.cboProductosConsulta.TabIndex = 2;
             // 
             // txtProductoConsulta
             // 
             this.txtProductoConsulta.Location = new System.Drawing.Point(125, 38);
             this.txtProductoConsulta.Name = "txtProductoConsulta";
             this.txtProductoConsulta.Size = new System.Drawing.Size(105, 20);
-            this.txtProductoConsulta.TabIndex = 7;
+            this.txtProductoConsulta.TabIndex = 3;
             this.txtProductoConsulta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductoConsulta_KeyPress);
             // 
             // btnConsultar
@@ -255,7 +255,7 @@
             this.btnFiltrar.Location = new System.Drawing.Point(236, 38);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(75, 22);
-            this.btnFiltrar.TabIndex = 5;
+            this.btnFiltrar.TabIndex = 4;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click_1);
@@ -267,7 +267,7 @@
             this.rbCantidad.Location = new System.Drawing.Point(125, 15);
             this.rbCantidad.Name = "rbCantidad";
             this.rbCantidad.Size = new System.Drawing.Size(107, 17);
-            this.rbCantidad.TabIndex = 3;
+            this.rbCantidad.TabIndex = 1;
             this.rbCantidad.TabStop = true;
             this.rbCantidad.Text = "Cantidad mayor a";
             this.rbCantidad.UseVisualStyleBackColor = true;
@@ -279,7 +279,7 @@
             this.rbProducto.Location = new System.Drawing.Point(19, 15);
             this.rbProducto.Name = "rbProducto";
             this.rbProducto.Size = new System.Drawing.Size(68, 17);
-            this.rbProducto.TabIndex = 2;
+            this.rbProducto.TabIndex = 0;
             this.rbProducto.Text = "Producto";
             this.rbProducto.UseVisualStyleBackColor = true;
             this.rbProducto.CheckedChanged += new System.EventHandler(this.rbProducto_CheckedChanged);
@@ -297,7 +297,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(350, 408);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.TabIndex = 5;
             // 
             // Producto
             // 
@@ -333,7 +333,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(399, 24);
-            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
@@ -349,7 +349,7 @@
             // 
             this.productosToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -357,7 +357,7 @@
             // 
             this.listadoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
-            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
