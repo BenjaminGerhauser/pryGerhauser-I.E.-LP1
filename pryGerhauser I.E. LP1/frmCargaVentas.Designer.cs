@@ -92,12 +92,14 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(138, 384);
+            this.btnRegistrar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistrar.Location = new System.Drawing.Point(138, 374);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(90, 23);
+            this.btnRegistrar.Size = new System.Drawing.Size(90, 27);
             this.btnRegistrar.TabIndex = 2;
             this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // mrcCargaVenta
@@ -236,22 +238,26 @@
             // 
             // btnConsultar
             // 
+            this.btnConsultar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConsultar.Location = new System.Drawing.Point(141, 479);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(89, 25);
             this.btnConsultar.TabIndex = 6;
             this.btnConsultar.Text = "Consultar todo";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(240, 38);
+            this.btnFiltrar.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFiltrar.Location = new System.Drawing.Point(236, 38);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(75, 21);
+            this.btnFiltrar.Size = new System.Drawing.Size(75, 22);
             this.btnFiltrar.TabIndex = 5;
             this.btnFiltrar.Text = "Filtrar";
-            this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.UseVisualStyleBackColor = false;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click_1);
             // 
             // rbCantidad

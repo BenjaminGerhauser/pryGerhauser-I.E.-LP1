@@ -119,12 +119,14 @@
             // 
             // btnListar
             // 
+            this.btnListar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnListar.Location = new System.Drawing.Point(25, 406);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(98, 23);
             this.btnListar.TabIndex = 5;
             this.btnListar.Text = "Listar todo";
-            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.UseVisualStyleBackColor = false;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // lblProductos

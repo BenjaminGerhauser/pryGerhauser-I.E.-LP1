@@ -16,7 +16,7 @@ namespace pryGerhauser_I.E.LP1
     {
         frmMain objetoMain = new frmMain();
         string[,] matrizVentas = new string[10, 4];
-        string[] vecIDs = new string[50];
+        string[] vecIDs = new string[100];
 
         string varFecha, varProducto, varID, varCantidad;
         int varAux, varCantidadTotal, indicefila;
