@@ -33,6 +33,8 @@
             this.VentanaRegistro = new System.Windows.Forms.TabPage();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.mrcCargaVenta = new System.Windows.Forms.GroupBox();
+            this.nUDID = new System.Windows.Forms.NumericUpDown();
+            this.lblID = new System.Windows.Forms.Label();
             this.txtProdcuto = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -56,16 +58,14 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblID = new System.Windows.Forms.Label();
-            this.nUDID = new System.Windows.Forms.NumericUpDown();
             this.tabControlCargaVenta.SuspendLayout();
             this.VentanaRegistro.SuspendLayout();
             this.mrcCargaVenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidad)).BeginInit();
             this.VentanaConsulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlCargaVenta
@@ -116,6 +116,23 @@
             this.mrcCargaVenta.Size = new System.Drawing.Size(201, 259);
             this.mrcCargaVenta.TabIndex = 8;
             this.mrcCargaVenta.TabStop = false;
+            // 
+            // nUDID
+            // 
+            this.nUDID.Location = new System.Drawing.Point(23, 150);
+            this.nUDID.Name = "nUDID";
+            this.nUDID.Size = new System.Drawing.Size(141, 20);
+            this.nUDID.TabIndex = 14;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.Location = new System.Drawing.Point(21, 134);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(20, 13);
+            this.lblID.TabIndex = 13;
+            this.lblID.Text = "ID";
             // 
             // txtProdcuto
             // 
@@ -213,7 +230,7 @@
             // 
             this.txtProductoConsulta.Location = new System.Drawing.Point(125, 38);
             this.txtProductoConsulta.Name = "txtProductoConsulta";
-            this.txtProductoConsulta.Size = new System.Drawing.Size(90, 20);
+            this.txtProductoConsulta.Size = new System.Drawing.Size(105, 20);
             this.txtProductoConsulta.TabIndex = 7;
             this.txtProductoConsulta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductoConsulta_KeyPress);
             // 
@@ -243,10 +260,10 @@
             this.rbCantidad.Checked = true;
             this.rbCantidad.Location = new System.Drawing.Point(125, 15);
             this.rbCantidad.Name = "rbCantidad";
-            this.rbCantidad.Size = new System.Drawing.Size(67, 17);
+            this.rbCantidad.Size = new System.Drawing.Size(107, 17);
             this.rbCantidad.TabIndex = 3;
             this.rbCantidad.TabStop = true;
-            this.rbCantidad.Text = "Cantidad";
+            this.rbCantidad.Text = "Cantidad mayor a";
             this.rbCantidad.UseVisualStyleBackColor = true;
             this.rbCantidad.CheckedChanged += new System.EventHandler(this.rbCantidad_CheckedChanged);
             // 
@@ -334,23 +351,6 @@
             this.listadoToolStripMenuItem.Text = "Listado";
             this.listadoToolStripMenuItem.Click += new System.EventHandler(this.listadoToolStripMenuItem_Click);
             // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(21, 134);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(20, 13);
-            this.lblID.TabIndex = 13;
-            this.lblID.Text = "ID";
-            // 
-            // nUDID
-            // 
-            this.nUDID.Location = new System.Drawing.Point(23, 150);
-            this.nUDID.Name = "nUDID";
-            this.nUDID.Size = new System.Drawing.Size(141, 20);
-            this.nUDID.TabIndex = 14;
-            // 
             // frmCargaVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,13 +370,13 @@
             this.VentanaRegistro.ResumeLayout(false);
             this.mrcCargaVenta.ResumeLayout(false);
             this.mrcCargaVenta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUDCantidad)).EndInit();
             this.VentanaConsulta.ResumeLayout(false);
             this.VentanaConsulta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nUDID)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

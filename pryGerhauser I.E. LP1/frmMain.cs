@@ -38,5 +38,6 @@ namespace pryGerhauser_I.E.LP1
             CargaVentas.ShowDialog();
         }
 
+        
     }
 }

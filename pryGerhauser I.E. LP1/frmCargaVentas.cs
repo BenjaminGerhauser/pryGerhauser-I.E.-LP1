@@ -16,6 +16,7 @@ namespace pryGerhauser_I.E.LP1
     {
         frmMain objetoMain = new frmMain();
         string[,] matrizVentas = new string[10, 4];
+        string[] vecIDs = new string[50];
 
         string varFecha, varProducto, varID, varCantidad;
         int varAux, varCantidadTotal, indicefila;
@@ -65,6 +66,8 @@ namespace pryGerhauser_I.E.LP1
             CargarProducto.ShowDialog();
         }
 
+       
+
         private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             objetoMain.Listado.ShowDialog();
@@ -96,7 +99,6 @@ namespace pryGerhauser_I.E.LP1
                     {
                         if (Convert.ToInt16(matrizVentas[i, 2]) >= Convert.ToInt16(txtProductoConsulta.Text) && matrizVentas[i, 2] != null)
                         {
-
                             dataGridView1.Rows.Add(matrizVentas[i, 0], matrizVentas[i, 1], matrizVentas[i, 2], matrizVentas[i, 3]);
                         }
                     }                    
@@ -142,25 +144,39 @@ namespace pryGerhauser_I.E.LP1
                     varProducto = txtProdcuto.Text;
                     varID = nUDID.Value.ToString();
                     varCantidad = nUDCantidad.Value.ToString();
+                    for (int i = 0; i < vecIDs.Length; i++)
+                    {
+                        if (vecIDs[i] != varID)
+                        {
+                            matrizVentas[indicefila, 0] = varProducto;
+                            matrizVentas[indicefila, 1] = varID ;
+                            matrizVentas[indicefila, 2] = varCantidad;
+                            matrizVentas[indicefila, 3] = varFecha;
 
-                    matrizVentas[indicefila, 0] = varProducto;
-                    matrizVentas[indicefila, 1] = varID ;
-                    matrizVentas[indicefila, 2] = varCantidad;
-                    matrizVentas[indicefila, 3] = varFecha;
+                            objetoMain.Listado.matrizVentas[indicefila, 0] = varProducto;
+                            objetoMain.Listado.matrizVentas[indicefila, 1] = varID;
+                            objetoMain.Listado.matrizVentas[indicefila, 2] = varCantidad;
+                            objetoMain.Listado.matrizVentas[indicefila, 3] = varFecha;
 
-                    objetoMain.Listado.matrizVentas[indicefila, 0] = varProducto;
-                    objetoMain.Listado.matrizVentas[indicefila, 1] = varID;
-                    objetoMain.Listado.matrizVentas[indicefila, 2] = varCantidad;
-                    objetoMain.Listado.matrizVentas[indicefila, 3] = varFecha;
+                            vecIDs[indicefila] = varID;
                     
-                    dataGridView1.Rows.Add(matrizVentas[indicefila, 0], matrizVentas[indicefila, 1], matrizVentas[indicefila, 2], matrizVentas[indicefila, 3]);
+                            dataGridView1.Rows.Add(matrizVentas[indicefila, 0], matrizVentas[indicefila, 1], matrizVentas[indicefila, 2], matrizVentas[indicefila, 3]);
 
-                    MessageBox.Show("Venta realizada");
-                    txtProdcuto.Text = string.Empty;
-                    nUDID.Value = 0;
-                    nUDCantidad.Value = 1;
-                    
-                    indicefila++;
+                            MessageBox.Show("Venta realizada");
+                            txtProdcuto.Text = string.Empty;
+                            nUDID.Value = 0;
+                            nUDCantidad.Value = 1;
+                        
+                            indicefila++;
+                            break;
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("ID registrado");
+                            break;
+                        }
+                    }
                 }
                 else
                 {

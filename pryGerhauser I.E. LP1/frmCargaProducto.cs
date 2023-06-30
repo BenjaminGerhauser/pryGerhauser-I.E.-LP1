@@ -83,10 +83,10 @@ namespace pryGerhauser_I.E.LP1
                                     lblErrorID.Visible = false;
                                     lblErrorFecha.Visible = false;
                                     lblErrorNombre.Visible = false;
-                                MessageBox.Show("Producto cargado");
-                                txtNombre.Text = string.Empty;
+                                    MessageBox.Show("Producto cargado");
+                                    txtNombre.Text = string.Empty;
                                 
-                                nUDID.Value = 0;
+                                    nUDID.Value = 0;
 
                                     IndiceFila++;
 
@@ -127,16 +127,16 @@ namespace pryGerhauser_I.E.LP1
                                         objetoMain.Listado.matrizProductos[IndiceFila, 1] = varID;
                                         objetoMain.Listado.matrizProductos[IndiceFila, 2] = varFecha;
 
-                                    dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0], matrizProductos[IndiceFila, 1],matrizProductos[IndiceFila, 2]);
-                                    lblErrorID.Visible = false;
-                                    lblErrorFecha.Visible = false;
-                                    lblErrorNombre.Visible = false;
-                                    MessageBox.Show("Producto cargado");
-                                    txtNombre.Text = string.Empty;
+                                        dataGridViewConsultaProducto.Rows.Add(matrizProductos[IndiceFila, 0], matrizProductos[IndiceFila, 1],matrizProductos[IndiceFila, 2]);
+                                        lblErrorID.Visible = false;
+                                        lblErrorFecha.Visible = false;
+                                        lblErrorNombre.Visible = false;
+                                        MessageBox.Show("Producto cargado");
+                                        txtNombre.Text = string.Empty;
                                    
-                                    nUDID.Value = 0;
+                                        nUDID.Value = 0;
 
-                                    IndiceFila++;
+                                        IndiceFila++;
 
                                         break;
                                     }
